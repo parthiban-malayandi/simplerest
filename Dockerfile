@@ -1,0 +1,2 @@
+FROM amazoncorretto:latest
+COPY
