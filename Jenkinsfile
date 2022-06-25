@@ -10,7 +10,7 @@ pipeline {
 
         stage("Push Docker"){
             steps{
-                sh "docker build -t practacc/simple-rest ."
+                sh "docker build -t simple-rest ."
             }
         }
 
