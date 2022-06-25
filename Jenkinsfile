@@ -3,13 +3,14 @@ pipeline {
     stages{
         stage("Build"){
             steps{
+                dir ../
                 sh "mvn clean package"
             }
         }
 
         stage("Push Docker"){
             steps{
-                sh "docker push"
+                sh "docker build practacc/simple-rest."
             }
         }
 
